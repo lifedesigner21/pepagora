@@ -20,11 +20,13 @@ body {
 
 /* Breadcrumb */
 .breadcrumb {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: #888;
   text-align: left;
+  font-weight: 500;
   max-width: 1200px;
   margin: 0 auto 30px;
+  line-height: 26px;
 }
 
 .breadcrumb span {
@@ -33,33 +35,56 @@ body {
 
 /* Hero Text */
 .hero-content h1 {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  margin-bottom: 20px;
+  color: var(--Primary-Color-Raisin-Black, #232323);
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 84px; /* 116.667% */
+  letter-spacing: -1.44px;
 }
 
 .hero-content .highlight {
   color: #d62828;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 84px;
+  letter-spacing: -1.44px;
 }
 
 .hero-content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #222;
+  color: var(--Primary-Color-Jet, #363636);
+  text-align: center;
+  font-family: "Inter Tight";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 156.25% */
 }
 
 .hero-content p {
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: #666;
-  font-size: 1rem;
+  color: var(--Secondary-Color-Granite-Grey, #616161);
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 30px; /* 125% */
 }
 
 /* Plan Picker */
 .plan-picker p {
-  font-size: 1.1rem;
-  font-weight: 500;
+  color: #000;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px; /* 100% */
   margin-bottom: 10px;
+  margin-top: 40px;
 }
 
 .plan-picker .arrow {
@@ -72,7 +97,7 @@ body {
 .toggle-button {
   display: inline-flex;
   border: 1px solid #ccc;
-  border-radius: 999px;
+  border-radius: 40px;
   overflow: hidden;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -89,8 +114,25 @@ body {
 }
 
 .toggle-button button.active {
-  background-color: #444;
+  background: #5b5b5c;
   color: white;
+}
+
+.section-header td {
+  background-color: #fef4f4;
+  border-left: 4px solid #d62828;
+  padding: 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.section-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #d62828;
+  font-size: 1rem;
 }
 
 /* Responsive */
@@ -117,7 +159,15 @@ body {
 }
 
 .plans-section h2 {
-  font-size: 2.4rem;
+  color: #000;
+
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 68px; /* 113.333% */
+  letter-spacing: -1.2px;
   margin-bottom: 10px;
 }
 
@@ -126,21 +176,32 @@ body {
 }
 
 .plans-section .subtitle {
-  font-size: 1.5rem;
-  color: #222;
+  color: var(--Primary-Color-Jet, #363636);
+  text-align: center;
+  font-family: "Inter Tight";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 156.25% */
   margin-bottom: 10px;
 }
 
 .plans-section .description {
-  font-size: 1rem;
-  color: #666;
+  color: var(--Secondary-Color-Granite-Grey, #616161);
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 30px; /* 125% */
   margin-bottom: 30px;
 }
 
 .billing-toggle {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  padding: 6px 8px 5px 28.789px;
+  gap: 33.211px;
   margin-bottom: 40px;
 }
 
@@ -149,15 +210,26 @@ body {
   background: #fff;
   padding: 10px 20px;
   border-radius: 30px;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: var(--Secondary-Color-Granite-Grey, #616161);
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
 }
 
 .billing-option.active {
   background: #222;
   color: white;
   border-color: #222;
+  color: var(--danger-plain-HoverBg, #fef6f6);
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 150%; /* 22.5px */
 }
 
 /* Cards Container */
@@ -176,7 +248,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 0 0 1px #eee;
   padding: 30px 20px;
-  max-width: 260px;
+  max-width: 320px;
   text-align: left;
   position: relative;
   flex: 1 1 250px;
@@ -187,7 +259,12 @@ body {
 }
 
 .plan-card h3 {
-  font-size: 1.5rem;
+  color: var(--Primary-Color-Raisin-Black, #232323);
+  font-family: "Inter Tight";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 128.571% */
   margin-bottom: 5px;
 }
 
@@ -198,14 +275,23 @@ body {
 }
 
 .price {
-  font-size: 2rem;
-  font-weight: bold;
+  color: var(--Primary-Color-Raisin-Black, #232323);
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 104.167% */
   margin-bottom: 5px;
 }
 
 .unit {
-  font-size: 0.8rem;
-  font-weight: normal;
+  color: #232323;
+
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 18px; /* 112.5% */
 }
 
 .billing-info {
@@ -220,15 +306,26 @@ hr {
 }
 
 .info-label {
-  font-size: 0.9rem;
-  color: #333;
+  color: var(--text-primary, #171a1c);
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 
 .features {
-  list-style: none;
-  padding-left: 0;
+  color: var(--Primary-Color-Raisin-Black, #232323);
+  /* Body/Body-b3 */
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
   margin-bottom: 25px;
+  list-style: none;
 }
 
 .features li {
@@ -260,12 +357,14 @@ hr {
 }
 
 .plan-button:hover {
-  background: #000;
-  color: #fff;
+  border-radius: 16px;
+  background: var(--Secondary-Color-White, #fff);
+  box-shadow: 0 1px 7.7px 2px rgba(0, 0, 0, 0.13);
 }
 
 .plan-button.red {
-  background: #d62828;
+  border-radius: 99px;
+  background: #d92c27;
   border-color: #d62828;
   color: #fff;
 }
@@ -287,15 +386,26 @@ hr {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #eee;
+  border-radius: 34px;
+  background: #232323;
   padding: 5px 10px;
   font-size: 0.75rem;
-  border-radius: 8px;
   font-weight: bold;
+  color: #fff;
+  width: 118px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
 }
 
 .label-corner.dark {
-  background: #222;
+  display: flex;
+  width: 130px;
+  padding: 4px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 34px;
+  background: #232323;
   color: #fff;
 }
 
@@ -329,27 +439,42 @@ hr {
 
 /* FOUNDATION PLANS SECTION */
 .foundation-section {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
+  color: #232323;
+  background-color: #fff;
   text-align: center;
+  line-height: 68px;
+  letter-spacing: -1.2px;
 }
 
 .foundation-header h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 450;
 }
 
 .foundation-header .subtitle {
   font-size: 1.5rem;
   margin-top: 10px;
-  color: #444;
+  color: var(--Primary-Color-Jet, #363636);
+  text-align: center;
+  font-family: "Inter Tight";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
 }
 
 .foundation-header .description {
-  font-size: 1rem;
-  color: #666;
   max-width: 700px;
   margin: 10px auto 40px auto;
+  color: var(--Secondary-Color-Granite-Grey, #616161);
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 30px;
 }
 
 .foundation-cards {
@@ -364,30 +489,45 @@ hr {
   border-radius: 15px;
   box-shadow: 0 0 0 1px #eee;
   width: 100%;
-  max-width: 400px;
-  padding: 25px;
+  max-width: 550px;
+  padding: 30px;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.plan-header h3 {
+/* Header Flex Alignment */
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 20px;
+}
+
+.plan-title h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin: 0;
 }
 
-.plan-header .tagline {
-  font-size: 0.9rem;
+.plan-title .tagline {
+  font-size: 0.875rem;
   color: #666;
-  margin-bottom: 15px;
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
-.plan-header .price {
+.plan-price {
+  text-align: right;
+}
+
+.plan-price .price {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .currency,
@@ -396,22 +536,30 @@ hr {
   color: #666;
 }
 
+.plan-price small {
+  font-size: 0.75rem;
+  color: #666;
+}
+
 .plan-body h4 {
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 0.5rem;
 }
 
 .feature-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .feature-list li {
   padding-left: 1.5rem;
-  margin-bottom: 10px;
   position: relative;
   font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .feature-list li::before {
@@ -459,6 +607,10 @@ hr {
   .foundation-header .description {
     font-size: 0.95rem;
   }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* FAQ section */
@@ -473,9 +625,13 @@ hr {
 }
 
 .faq-heading {
-  font-size: 2rem;
-  font-weight: 500;
+  color: #232323;
   text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: -1.2px;
   margin-bottom: 40px;
 }
 
@@ -483,26 +639,29 @@ hr {
   color: #d62828;
 }
 
-/* Category section title */
 .faq-category-title {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin: 36px 0 20px 0;
 }
 
 .faq-category-title span {
-  font-size: 0.9rem;
+  color: #232323;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 28px;
   font-weight: 500;
-  color: #111;
+  line-height: 42px;
 }
 
 .faq-category-title h3 {
-  font-size: 1rem;
+  color: #232323;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 28px;
   font-weight: 500;
+  line-height: 42px;
 }
 
-/* FAQ cards */
 .faq-card {
   background: #fff;
   border: 1px solid #e6e6e6;
@@ -510,7 +669,6 @@ hr {
   padding: 16px 20px;
   margin-bottom: 12px;
   font-size: 0.95rem;
-  line-height: 1.5;
   font-weight: 400;
   color: #111;
   cursor: pointer;
@@ -521,17 +679,26 @@ hr {
   background-color: #f5f5f5;
 }
 
-/* Red highlighted question */
-.faq-question.red {
-  color: #d62828;
+.faq-question {
   font-weight: 500;
+  color: #232323;
 }
 
-/* Answer section */
-.faq-open .faq-answer {
+.faq-question.red {
+  color: #d62828;
+}
+
+.faq-answer {
   margin-top: 10px;
   font-size: 0.92rem;
   color: #444;
+  display: none;
+  line-height: 1.5;
+}
+
+/* Only show answer when faq-open is applied */
+.faq-open .faq-answer {
+  display: block;
 }
 
 /* Responsive */
@@ -541,15 +708,237 @@ hr {
   }
 
   .faq-heading {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .faq-category-title h3,
+  .faq-category-title span {
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
 
   .faq-card {
     font-size: 0.95rem;
     padding: 14px 16px;
   }
+}
 
-  .faq-category-title h3 {
+/* Container Styling */
+.feature-comparison-wrapper {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.toggle-btn-wrapper {
+  margin: 20px 0;
+}
+
+.toggle-btn {
+  padding: 12px 24px;
+  border: 1.5px solid #000;
+  border-radius: 30px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.toggle-btn .plus-icon {
+  font-size: 1.2rem;
+}
+
+.feature-comparison-container {
+  display: none;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.comparison-table thead {
+  background: #f9f9f9;
+  font-weight: bold;
+}
+/* Table Cell Sizing Consistency */
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  font-size: 0.95rem;
+  height: 80px; /* Adjust height for box consistency */
+  min-width: 150px; /* Standard box width */
+  vertical-align: middle; /* Align content in center */
+  box-sizing: border-box;
+}
+
+/* Ensure first column (row headers) is wide enough */
+.comparison-table td:first-child,
+.comparison-table th:first-child {
+  text-align: left;
+  min-width: 240px; /* Slightly wider for text */
+  height: 100px;
+  vertical-align: top;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.section-header td {
+  background-color: #fef4f4;
+  font-weight: bold;
+  text-align: left;
+  color: #d62828;
+  border-left: 4px solid #d62828;
+  font-size: 1rem;
+}
+
+/* Adjust special case cell with <small> text */
+.comparison-table td small {
+  display: block;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* Optional: Improve mobile scroll experience */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.feature-title {
+  color: #232323;
+
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 68px; /* 113.333% */
+  letter-spacing: -1.2px;
+  margin-bottom: 10px;
+}
+
+.feature-title .highlight {
+  color: #d92c27;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 68px;
+  letter-spacing: -1.2px;
+}
+
+.comparison-table td:first-child,
+.comparison-table th:first-child {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
     font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+  }
+
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+}
+
+/* Hide table and show mobile cards on small screens */
+@media (max-width: 768px) {
+  .comparison-table {
+    display: none;
+  }
+
+  .feature-comparison-container {
+    padding: 0;
+  }
+
+  .mobile-plan-card {
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .mobile-plan-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+  }
+
+  .mobile-plan-section {
+    margin-bottom: 16px;
+  }
+
+  .mobile-plan-section strong {
+    color: #d62828;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .mobile-feature {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+  }
+
+  .mobile-feature small {
+    display: block;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 2px;
+  }
+
+  .mobile-feature:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-feature-label {
+    font-weight: 500;
+    flex: 1;
+  }
+
+  .mobile-feature-value {
+    text-align: right;
+    flex-shrink: 0;
+    padding-left: 10px;
+    color: #222;
   }
 }
