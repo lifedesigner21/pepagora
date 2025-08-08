@@ -1,0 +1,555 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+/* Pricing Hero Section */
+.pricing-hero {
+  text-align: center;
+  padding: 40px 20px 80px;
+  background: linear-gradient(to bottom right, #fff, #fff0f0);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.breadcrumb span {
+  color: #bbb;
+}
+
+/* Hero Text */
+.hero-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+  color: #d62828;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Plan Picker */
+.plan-picker p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.plan-picker .arrow {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Toggle Button */
+.toggle-button {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button button {
+  padding: 12px 30px;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button button.active {
+  background-color: #444;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .toggle-button button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Growth Plans Section */
+.plans-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.plans-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.plans-section .highlight {
+  color: #d62828;
+}
+
+.plans-section .subtitle {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.plans-section .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.billing-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.billing-option {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.billing-option.active {
+  background: #222;
+  color: white;
+  border-color: #222;
+}
+
+/* Cards Container */
+.plans-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: stretch;
+}
+
+/* Each Plan Card */
+.plan-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #eee;
+  padding: 30px 20px;
+  max-width: 260px;
+  text-align: left;
+  position: relative;
+  flex: 1 1 250px;
+
+  /* Key Flex Fix */
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.plan-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.unit {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.billing-info {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0.5px solid #eee;
+}
+
+.info-label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.features li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.features li::before {
+  content: "✔";
+  color: #1a8f1a;
+  position: absolute;
+  left: 0;
+}
+
+.plan-button {
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid #000;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* This will push the button to bottom */
+  margin-top: auto;
+}
+
+.plan-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.plan-button.red {
+  background: #d62828;
+  border-color: #d62828;
+  color: #fff;
+}
+
+.label-top {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  background: #d62828;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.label-corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #eee;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.label-corner.dark {
+  background: #222;
+  color: #fff;
+}
+
+.highlight-card {
+  border: 2px solid #d62828;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    max-width: 90%;
+  }
+
+  .plans-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .plans-section .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+}
+
+/* FOUNDATION PLANS SECTION */
+.foundation-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.foundation-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.foundation-header .subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+.foundation-header .description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 10px auto 40px auto;
+}
+
+.foundation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.foundation-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 0 1px #eee;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.plan-header .tagline {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.plan-header .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.currency,
+.billing {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.plan-body h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.feature-list li {
+  padding-left: 1.5rem;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.feature-list li::before {
+  content: "✔";
+  color: #00a651;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn-outline {
+  padding: 12px 18px;
+  border: 1px solid #000;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .foundation-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foundation-card {
+    max-width: 90%;
+  }
+
+  .foundation-header h2 {
+    font-size: 2rem;
+  }
+
+  .foundation-header .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .foundation-header .description {
+    font-size: 0.95rem;
+  }
+}
+
+/* FAQ section */
+.faq-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.faq-container {
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-heading span {
+  color: #d62828;
+}
+
+/* Category section title */
+.faq-category-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.faq-category-title span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.faq-category-title h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* FAQ cards */
+.faq-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faq-card:hover {
+  background-color: #f5f5f5;
+}
+
+/* Red highlighted question */
+.faq-question.red {
+  color: #d62828;
+  font-weight: 500;
+}
+
+/* Answer section */
+.faq-open .faq-answer {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 0 15px;
+  }
+
+  .faq-heading {
+    font-size: 1.8rem;
+  }
+
+  .faq-card {
+    font-size: 0.95rem;
+    padding: 14px 16px;
+  }
+
+  .faq-category-title h3 {
+    font-size: 0.95rem;
+  }
+}
