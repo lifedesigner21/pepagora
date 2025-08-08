@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | Pepagora</title>
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+  <section class="faq-page">
+    <nav class="breadcrumb">Home / FAQs</nav>
+    
+    <header class="faq-header">
+      <h1>Frequently Asked <span class="highlight">Questions</span></h1>
+      <h2>Have a Question? <span class="sub-highlight">We’ve Got You</span></h2>
+    </header>
+
+    <div class="faq-container">
+      <aside class="faq-sidebar">
+        <ul>
+          <li class="active">Account & Membership</li>
+          <li>Tech & Troubleshooting</li>
+          <li>Website & Hosting</li>
+          <li>Platform Features</li>
+          <li>Legal & Compliance</li>
+        </ul>
+        <p class="contribute-note">
+          Don’t see a match but believe in what we’re building?<br>
+          Write to us at <a href="mailto:careers@pepagora.com">careers@pepagora.com</a> and tell us how you can contribute.
+        </p>
+      </aside>
+
+      <div class="faq-content">
+        <div class="faq-item">
+          <button class="faq-question">How long are Pepagora contracts?</button>
+        </div>
+
+        <div class="faq-item open">
+          <button class="faq-question active">How do I cancel?</button>
+          <div class="faq-answer">
+            <p>It’s easy. As there are no cancellation fees you can cancel your Premium Package at any time. Go to My Pepagora > Membership Settings & on the subscription you’d like to cancel.</p>
+            <ul>
+              <li>* Monthly plans won’t be charged starting the next month</li>
+              <li>* Yearly plans won’t be charged starting the next year</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Is my data safe and secure?</button>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do I need web hosting in addition to my Pepagora account?</button>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I upgrade from the free trial to a paid plan?</button>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I use a subdomain for my Website?</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple accordion toggle
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const parent = btn.parentElement;
+        parent.classList.toggle('open');
+        btn.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

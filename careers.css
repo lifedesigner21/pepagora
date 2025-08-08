@@ -1,8 +1,27 @@
-body {
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./fonts/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+* {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background: #fff;
-  color: #000;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'NeueHaasDisplay', sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px 0;
 }
 
 /* ---------- Careers Header Section ---------- */
