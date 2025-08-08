@@ -1,0 +1,136 @@
+
+/* Reset and Base Styles */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "NeueHaasDisplay", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.highlighted-word {
+  color: #D92C27;
+}
+
+.legal-page {
+  display: flex;
+  flex-direction: column;
+}
+.legal-header{
+  margin-left:240px;
+  padding: 20px 0px;
+
+}
+.legal-heading{
+  font-size: 90px;
+  font-weight: 450;
+line-height: normal;
+letter-spacing: -1.8px;
+}
+
+.legal-container {
+  display: flex;
+  background: #F4F4F4;
+  gap: 2rem;
+  padding-left: 240px;
+  padding-top: 60px;
+}
+
+.legal-sidebar {
+  min-width: 200px;
+}
+
+.legal-sidebar ul {
+  list-style: none;
+  border-left: 2px solid #eee;
+}
+
+.legal-sidebar li {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.legal-sidebar li:hover,
+.legal-sidebar li.active {
+  background-color: #f5f5f5;
+  border-left: 3px solid #d62828;
+  color: #d62828;
+  font-weight: bold;
+}
+
+.legal-content {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+#legal-body {
+  background: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  max-height: 600px; /* Fixed height */
+  overflow-y: auto;   /* Scroll */
+  width: 100%;        /* Full width */
+  line-height: 1.6;
+  overflow: visible;   /* important */
+  max-height: none;  
+}
+
+.legal-content h1 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.legal-content h2 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.legal-content p {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legal-container {
+    flex-direction: column;
+  }
+
+  .legal-sidebar {
+    width: 100%;
+  }
+
+  .legal-content {
+    padding: 1rem;
+  }
+}

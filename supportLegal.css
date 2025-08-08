@@ -1,14 +1,14 @@
 /* Reset and Base Styles */
 @font-face {
-  font-family: 'NeueHaasDisplay';
-  src: url('./fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayRoman.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueHaasDisplay';
-  src: url('./fonts/NeueHaasDisplayBold.ttf') format('truetype');
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayBold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
@@ -20,8 +20,8 @@
 }
 
 body {
-  font-family: 'NeueHaasDisplay', sans-serif;
-  background-color: #f8f9fa;
+  font-family: "NeueHaasDisplay", sans-serif;
+  background-color: #fff;
   padding: 20px 0;
 }
 
@@ -38,7 +38,8 @@ ul {
 .breadcrumb {
   font-size: 0.9rem;
   color: #777;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
+  margin-left: 240px;
 }
 
 /* Header */
@@ -46,8 +47,16 @@ ul {
   margin-bottom: 40px;
 }
 
+.mobile-break {
+  display: none;
+}
+
 .faq-header h1 {
-  font-size: 2.5rem;
+  font-size: 90px;
+  font-weight: normal;
+  margin: 0px 0px 60px 240px;
+  line-height: normal;
+  letter-spacing: -1.8px;
 }
 
 .faq-header .highlight {
@@ -55,8 +64,11 @@ ul {
 }
 
 .faq-header h2 {
-  font-size: 1.4rem;
-  margin-top: 10px;
+  font-size: 60px;
+  font-weight: normal;
+  margin: 69px 0px;
+  line-height: 68px;
+  letter-spacing: -1.2px;
 }
 
 .sub-highlight {
@@ -66,8 +78,16 @@ ul {
 /* Layout */
 .faq-container {
   display: flex;
+  flex-direction: column;
   gap: 40px;
   flex-wrap: wrap;
+  background-color: #f4f4f4;
+  padding: 0px 240px;
+  padding-bottom: 200px;
+}
+.faq-inner-container {
+  display: flex;
+  gap: 30px;
 }
 
 /* Sidebar */
@@ -76,7 +96,9 @@ ul {
 }
 
 .faq-sidebar ul {
-  border-left: 2px solid #eee;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 450;
   padding-left: 10px;
   margin-bottom: 20px;
 }
@@ -84,7 +106,8 @@ ul {
 .faq-sidebar li {
   padding: 10px 15px;
   cursor: pointer;
-  border-left: 3px solid transparent;
+  border-left: 3px solid #eee;
+  border-bottom: 2px solid #eee;
   transition: all 0.3s ease;
 }
 
@@ -100,6 +123,16 @@ ul {
   font-size: 0.9rem;
   color: #444;
   margin-top: 30px;
+  margin-left: 8px;
+}
+.contribute-one {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+.contribute-two {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /* Content */
@@ -123,30 +156,58 @@ ul {
   background: none;
   border: none;
   padding: 20px;
-  font-size: 1rem;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
   text-align: left;
   cursor: pointer;
   position: relative;
+  color: #232323;
 }
 
 .faq-question::after {
-  content: '⌄';
+  content: "";
   position: absolute;
   right: 20px;
-  transform: rotate(0deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 24px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M19.025 17.3188L20.5 15.8354L12.25 7.59375L4 15.8438L5.475 17.3188L12.25 10.5438L19.025 17.3188Z' fill='%23232323'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
   transition: transform 0.3s ease;
+}
+
+.faq-question.active {
+  color: #d62828; /* Red color when active */
 }
 
 .faq-question.active::after {
   transform: rotate(180deg);
 }
+.answer-border {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  pointer-events: none; /* Prevent interaction */
+}
 
 .faq-answer {
   padding: 0 20px 20px 20px;
-  font-size: 0.95rem;
-  color: #444;
+  font-size: 20px;
+  line-height: 30px;
+  color: #616161;
+  border-radius: 16px;
+  border: 1px solid #f8f8f8;
+  background: #fff;
+  box-shadow: 0 0.547px 1.095px 0 rgba(0, 0, 0, 0.25);
 }
 
+.answer-text {
+  padding-top: 20px;
+}
 .faq-answer ul {
   padding-left: 20px;
   margin-top: 10px;
@@ -156,21 +217,4 @@ ul {
   list-style: disc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .faq-container {
-    flex-direction: column;
-  }
 
-  .faq-header h1 {
-    font-size: 2rem;
-  }
-
-  .faq-sidebar {
-    order: 2;
-  }
-
-  .faq-content {
-    order: 1;
-  }
-}

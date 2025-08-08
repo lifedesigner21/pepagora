@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal | Pepagora</title>
+  <link rel="stylesheet" href="legal.css" />
+</head>
+<body>
+  <section class="legal-page">
+    <div class="legal-header">
+      <nav class="breadcrumb">Home / <span id="breadcrumb-label">Privacy Policy</span></nav>
+      <h1 id="legal-title" class="legal-heading">Privacy <span class="highlighted-word">Policy</span></h1>
+    </div>
+
+    <div class="legal-container">
+      <aside class="legal-sidebar">
+        <ul id="legal-tabs">
+          <li class="active" data-tab="Privacy Policy">Privacy Policy</li>
+          <li data-tab="Terms of Service">Terms of Service</li>
+          <li data-tab="Subscription">Subscription</li>
+        </ul>
+      </aside>
+
+      <main class="legal-content" style="height: 500px;">
+  <div id="legal-body" style="height: 100%;">
+    <iframe 
+      id="legal-iframe"
+      src="/legal/privacy-policy.html" 
+      width="100%" 
+      height="100%" 
+      style="border: none; border-radius: 6px;">
+    </iframe>
+  </div>
+</main>
+    </div>
+  </section>
+
+  <script>
+    const tabs = document.querySelectorAll("#legal-tabs li");
+    const title = document.getElementById("legal-title");
+    const breadcrumb = document.getElementById("breadcrumb-label");
+    const body = document.getElementById("legal-body");
+
+    const iframe = document.getElementById("legal-iframe");
+
+    const tabToFile = {
+      "Privacy Policy": "/legal/privacy-policy.html",
+      "Terms of Service": "/legal/terms-of-service.html",
+      "Subscription": "/legal/subscription.html"
+    };
+
+    function formatTitle(text) {
+      const words = text.trim().split(" ");
+      if (words.length === 1) return `<span class="highlighted-word">${words[0]}</span>`;
+      const lastWord = words.pop();
+      return `${words.join(" ")} <span class="highlighted-word">${lastWord}</span>`;
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const selected = tab.getAttribute("data-tab");
+        title.innerHTML = formatTitle(selected);
+        breadcrumb.textContent = selected;
+
+        // Update iframe source
+        iframe.src = tabToFile[selected];
+      });
+    });
+
+    // Initial formatting
+    title.innerHTML = formatTitle(breadcrumb.textContent);
+  </script>
+</body>
+</html>
