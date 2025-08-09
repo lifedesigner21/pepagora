@@ -78,103 +78,113 @@
         <button class="billing-option active">Pay Yearly (Best Value)</button>
       </div>
 
-      <div class="plans-container">
-        <!-- Grow Plan -->
-        <div class="plan-card">
-          <h3>Grow</h3>
-          <p class="plan-subtitle">Ambitious Startup</p>
-          <div class="price">
-            <span>₹</span>2,000<span class="unit"> INR<br />/month</span>
-          </div>
-          <p class="billing-info">billed once yearly</p>
-          <hr />
-          <p class="info-label">
-            <strong>Billing Info:</strong><br />/Year, For Building A Strong
-            Digital Foundation.
-          </p>
-          <p class="info-label"><strong>Feature List:</strong></p>
-          <ul class="features">
-            <li>Standard Multi-Page Website</li>
-            <li>Full Smart CRM Suite to Manage Leads</li>
-            <li>TruCertified Verification Badge</li>
-            <li>Marketplace Listing & RFQ Access</li>
-            <li>4 Languages for Your Website</li>
-          </ul>
-          <button class="plan-button">Choose Grow</button>
-        </div>
+      <!-- Mobile Tabs -->
+      <div class="mobile-tabs">
+        <button class="tab-button active" data-target="Grow">Grow</button>
+        <button class="tab-button" data-target="Scale">Scale</button>
+        <button class="tab-button" data-target="Global">Global</button>
+        <button class="tab-button" data-target="Enterprise">Enterprise</button>
+      </div>
 
-        <!-- Scale Plan (Highlighted) -->
-        <div class="plan-card highlight-card">
-          <div class="label-top">Save 20% on Yearly</div>
-          <div class="label-corner">Most Popular</div>
-          <h3>Scale</h3>
-          <p class="plan-subtitle">Growing SME</p>
-          <div class="price">
-            <span>₹</span>4,000<span class="unit"> INR<br />/month</span>
+      <div class="plans-slider">
+        <div class="plans-container">
+          <!-- Grow Plan -->
+          <div class="plan-card active" id="Grow">
+            <h3>Grow</h3>
+            <p class="plan-subtitle">Ambitious Startup</p>
+            <div class="price">
+              <span>₹</span>2,000<span class="unit"> INR<br />/month</span>
+            </div>
+            <p class="billing-info">billed once yearly</p>
+            <hr />
+            <p class="info-label">
+              <strong>Billing Info:</strong><br />/Year, For Building A Strong
+              Digital Foundation.
+            </p>
+            <p class="info-label"><strong>Feature List:</strong></p>
+            <ul class="features">
+              <li>Standard Multi-Page Website</li>
+              <li>Full Smart CRM Suite to Manage Leads</li>
+              <li>TruCertified Verification Badge</li>
+              <li>Marketplace Listing & RFQ Access</li>
+              <li>4 Languages for Your Website</li>
+            </ul>
+            <button class="plan-button">Choose Grow</button>
           </div>
-          <p class="billing-info">billed once yearly</p>
-          <hr />
-          <p class="info-label">
-            <strong>Billing Info:</strong><br />/Year, Best For Ambitious,
-            Growing Businesses.
-          </p>
-          <p class="info-label"><strong>Feature List:</strong></p>
-          <ul class="features">
-            <li>Everything in Starter, plus:</li>
-            <li>Custom Domain Website</li>
-            <li>Dedicated Account Manager</li>
-            <li>Enhanced Marketplace Visibility</li>
-            <li>TruVerified Credibility Badge</li>
-            <li>Priority Phone, Chat & Email Support</li>
-          </ul>
-          <button class="plan-button red">Choose Professional</button>
-        </div>
 
-        <!-- Global Plan -->
-        <div class="plan-card">
-          <div class="label-corner dark">Recommended</div>
-          <h3>Global</h3>
-          <p class="plan-subtitle">Established Exporter</p>
-          <div class="price">
-            <span>₹</span>8,000<span class="unit"> INR<br />/month</span>
+          <!-- Scale Plan -->
+          <div class="plan-card highlight-card" id="Scale">
+            <div class="label-top">Save 20% on Yearly</div>
+            <div class="label-corner">Most Popular</div>
+            <h3>Scale</h3>
+            <p class="plan-subtitle">Growing SME</p>
+            <div class="price">
+              <span>₹</span>4,000<span class="unit"> INR<br />/month</span>
+            </div>
+            <p class="billing-info">billed once yearly</p>
+            <hr />
+            <p class="info-label">
+              <strong>Billing Info:</strong><br />/Year, Best For Ambitious,
+              Growing Businesses.
+            </p>
+            <p class="info-label"><strong>Feature List:</strong></p>
+            <ul class="features">
+              <li>Everything in Starter, plus:</li>
+              <li>Custom Domain Website</li>
+              <li>Dedicated Account Manager</li>
+              <li>Enhanced Marketplace Visibility</li>
+              <li>TruVerified Credibility Badge</li>
+              <li>Priority Phone, Chat & Email Support</li>
+            </ul>
+            <button class="plan-button red">Choose Professional</button>
           </div>
-          <p class="billing-info">billed once yearly</p>
-          <hr />
-          <p class="info-label">
-            <strong>Billing Info:</strong><br />/Year, Designed For Exporters
-            And Market Leaders.
-          </p>
-          <p class="info-label"><strong>Feature List:</strong></p>
-          <ul class="features">
-            <li>Everything in Starter, plus:</li>
-            <li>Elite Catalog with Multilingual & Multi-currency</li>
-            <li>Top-Tier Marketplace Visibility (Level 2)</li>
-            <li>TruGlobal Verification for International Trust</li>
-            <li>3 Included Business Emails</li>
-            <li>10+ Languages for Your Website</li>
-          </ul>
-          <button class="plan-button">Go Global</button>
-        </div>
 
-        <!-- Enterprise Plan -->
-        <div class="plan-card">
-          <h3>Enterprise</h3>
-          <p class="plan-subtitle">Large Corporation</p>
-          <hr />
-          <p class="info-label">
-            <strong>Billing Info:</strong><br />For Large Teams Needing Custom
-            Solutions.
-          </p>
-          <p class="info-label"><strong>Feature List:</strong></p>
-          <ul class="features">
-            <li>Everything in Global, plus:</li>
-            <li>Fully Customizable Website & API Integration</li>
-            <li>Highest Marketplace Visibility (Level 1)</li>
-            <li>TruSecure Enterprise-Grade Verification</li>
-            <li>Bespoke Onboarding & Premium Support SLAs</li>
-            <li>Advanced Admin & Security Controls</li>
-          </ul>
-          <button class="plan-button">Contact Sales</button>
+          <!-- Global Plan -->
+          <div class="plan-card" id="Global">
+            <div class="label-corner dark">Recommended</div>
+            <h3>Global</h3>
+            <p class="plan-subtitle">Established Exporter</p>
+            <div class="price">
+              <span>₹</span>8,000<span class="unit"> INR<br />/month</span>
+            </div>
+            <p class="billing-info">billed once yearly</p>
+            <hr />
+            <p class="info-label">
+              <strong>Billing Info:</strong><br />/Year, Designed For Exporters
+              And Market Leaders.
+            </p>
+            <p class="info-label"><strong>Feature List:</strong></p>
+            <ul class="features">
+              <li>Everything in Starter, plus:</li>
+              <li>Elite Catalog with Multilingual & Multi-currency</li>
+              <li>Top-Tier Marketplace Visibility (Level 2)</li>
+              <li>TruGlobal Verification for International Trust</li>
+              <li>3 Included Business Emails</li>
+              <li>10+ Languages for Your Website</li>
+            </ul>
+            <button class="plan-button">Go Global</button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="plan-card" id="Enterprise">
+            <h3>Enterprise</h3>
+            <p class="plan-subtitle">Large Corporation</p>
+            <hr />
+            <p class="info-label">
+              <strong>Billing Info:</strong><br />For Large Teams Needing Custom
+              Solutions.
+            </p>
+            <p class="info-label"><strong>Feature List:</strong></p>
+            <ul class="features">
+              <li>Everything in Global, plus:</li>
+              <li>Fully Customizable Website & API Integration</li>
+              <li>Highest Marketplace Visibility (Level 1)</li>
+              <li>TruSecure Enterprise-Grade Verification</li>
+              <li>Bespoke Onboarding & Premium Support SLAs</li>
+              <li>Advanced Admin & Security Controls</li>
+            </ul>
+            <button class="plan-button">Contact Sales</button>
+          </div>
         </div>
       </div>
     </section>
@@ -662,7 +672,6 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <!-- FAQ SECTION -->
     <section class="faq-section">
       <div class="faq-container">
         <h2 class="faq-heading">Frequently Asked <span>Questions</span></h2>
@@ -673,65 +682,66 @@
             <span>01</span>
             <h3>Plan & Account Basics</h3>
           </div>
+          <div class="faq-content">
+            <div class="faq-card">
+              <div class="faq-question">
+                What is the main difference between "Foundation" and "Growth"
+                plans?
+              </div>
+              <div class="faq-answer">
+                Foundation is a basic plan, while Growth includes more advanced
+                tools to help you grow your business faster.
+              </div>
+            </div>
 
-          <div class="faq-card">
-            <div class="faq-question">
-              What is the main difference between "Foundation" and "Growth"
-              plans?
+            <div class="faq-card">
+              <div class="faq-question">
+                I'm not sure which plan is right for my business. Can you help?
+              </div>
+              <div class="faq-answer">
+                Yes! You can start with the Free plan and upgrade as your
+                business grows.
+              </div>
             </div>
-            <div class="faq-answer">
-              Foundation is a basic plan, while Growth includes more advanced
-              tools to help you grow your business faster.
-            </div>
-          </div>
 
-          <div class="faq-card">
-            <div class="faq-question">
-              I'm not sure which plan is right for my business. Can you help?
+            <div class="faq-card">
+              <div class="faq-question red">
+                Can I really use all plans for both sourcing and selling?
+              </div>
+              <div class="faq-answer">
+                Yes, absolutely. Every Pepagora account is a unified business
+                account. You can post buy requirements and search for suppliers
+                on every plan. The Growth plans simply add more powerful tools
+                to help you proactively market and sell your own products.
+              </div>
             </div>
-            <div class="faq-answer">
-              Yes! You can start with the Free plan and upgrade as your business
-              grows.
-            </div>
-          </div>
 
-          <div class="faq-card">
-            <div class="faq-question red">
-              Can I really use all plans for both sourcing and selling?
+            <div class="faq-card">
+              <div class="faq-question">Can I change my plan later?</div>
+              <div class="faq-answer">
+                Yes, you can upgrade or downgrade your plan anytime based on
+                your needs.
+              </div>
             </div>
-            <div class="faq-answer">
-              Yes, absolutely. Every Pepagora account is a unified business
-              account. You can post buy requirements and search for suppliers on
-              every plan. The Growth plans simply add more powerful tools to
-              help you proactively market and sell your own products.
-            </div>
-          </div>
 
-          <div class="faq-card">
-            <div class="faq-question">Can I change my plan later?</div>
-            <div class="faq-answer">
-              Yes, you can upgrade or downgrade your plan anytime based on your
-              needs.
+            <div class="faq-card">
+              <div class="faq-question">
+                Do you offer a free trial for the Growth plans?
+              </div>
+              <div class="faq-answer">
+                We do offer limited-time trials during special promotions. Stay
+                tuned for updates.
+              </div>
             </div>
-          </div>
 
-          <div class="faq-card">
-            <div class="faq-question">
-              Do you offer a free trial for the Growth plans?
-            </div>
-            <div class="faq-answer">
-              We do offer limited-time trials during special promotions. Stay
-              tuned for updates.
-            </div>
-          </div>
-
-          <div class="faq-card">
-            <div class="faq-question">
-              Are there limits on products, contacts, or buy requirements?
-            </div>
-            <div class="faq-answer">
-              Some limits may apply depending on your plan. Growth plans
-              typically offer higher limits.
+            <div class="faq-card">
+              <div class="faq-question">
+                Are there limits on products, contacts, or buy requirements?
+              </div>
+              <div class="faq-answer">
+                Some limits may apply depending on your plan. Growth plans
+                typically offer higher limits.
+              </div>
             </div>
           </div>
         </div>
@@ -742,18 +752,19 @@
             <span>02</span>
             <h3>Billing & Subscription</h3>
           </div>
-          <!-- Dummy questions -->
-          <div class="faq-card">
-            <div class="faq-question">How does the billing cycle work?</div>
-            <div class="faq-answer">
-              Billing is processed yearly for paid plans, starting from the date
-              of purchase.
+          <div class="faq-content">
+            <div class="faq-card">
+              <div class="faq-question">How does the billing cycle work?</div>
+              <div class="faq-answer">
+                Billing is processed yearly for paid plans, starting from the
+                date of purchase.
+              </div>
             </div>
-          </div>
-          <div class="faq-card">
-            <div class="faq-question">Can I get an invoice?</div>
-            <div class="faq-answer">
-              Yes, invoices are automatically emailed after payment.
+            <div class="faq-card">
+              <div class="faq-question">Can I get an invoice?</div>
+              <div class="faq-answer">
+                Yes, invoices are automatically emailed after payment.
+              </div>
             </div>
           </div>
         </div>
@@ -764,10 +775,12 @@
             <span>03</span>
             <h3>Global & International Business</h3>
           </div>
-          <div class="faq-card">
-            <div class="faq-question">Can I sell internationally?</div>
-            <div class="faq-answer">
-              Yes, the platform supports global buyers and sellers.
+          <div class="faq-content">
+            <div class="faq-card">
+              <div class="faq-question">Can I sell internationally?</div>
+              <div class="faq-answer">
+                Yes, the platform supports global buyers and sellers.
+              </div>
             </div>
           </div>
         </div>
@@ -778,10 +791,13 @@
             <span>04</span>
             <h3>Features, Security & Support</h3>
           </div>
-          <div class="faq-card">
-            <div class="faq-question">How secure is my data?</div>
-            <div class="faq-answer">
-              We use industry-standard security practices to protect your data.
+          <div class="faq-content">
+            <div class="faq-card">
+              <div class="faq-question">How secure is my data?</div>
+              <div class="faq-answer">
+                We use industry-standard security practices to protect your
+                data.
+              </div>
             </div>
           </div>
         </div>
@@ -794,29 +810,62 @@
       const container = document.getElementById("featureComparisonContainer");
 
       toggleBtn.addEventListener("click", () => {
-        container.style.display = "block";
-        toggleBtn.style.display = "none";
+        container.classList.add("show");
+        toggleBtn.classList.add("hidden");
       });
 
       closeBtn.addEventListener("click", () => {
-        container.style.display = "none";
-        toggleBtn.style.display = "inline-flex";
+        container.classList.remove("show");
+        toggleBtn.classList.remove("hidden");
       });
 
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-          const parentCard = question.parentElement;
+      // Toggle full category open/close
+      document.querySelectorAll(".faq-category-title").forEach((title) => {
+        title.addEventListener("click", () => {
+          const category = title.parentElement;
+          category.classList.toggle("open");
+        });
+      });
 
-          // Close all open cards except the clicked one
-          document.querySelectorAll(".faq-card").forEach((card) => {
-            if (card !== parentCard) {
-              card.classList.remove("faq-open");
-            }
+      // Toggle individual question
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", (e) => {
+          e.stopPropagation(); // prevent closing the whole section
+          const card = question.parentElement;
+
+          // Close other open cards in same category
+          const siblingCards = card.parentElement.querySelectorAll(".faq-card");
+          siblingCards.forEach((c) => {
+            if (c !== card) c.classList.remove("faq-open");
           });
 
-          // Toggle the clicked one
-          parentCard.classList.toggle("faq-open");
+          card.classList.toggle("faq-open");
         });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-button");
+        const cards = document.querySelectorAll(".plan-card");
+
+        function showCard(id) {
+          tabs.forEach((tab) => tab.classList.remove("active"));
+          cards.forEach((card) => card.classList.remove("active"));
+
+          document
+            .querySelector(`[data-target="${id}"]`)
+            .classList.add("active");
+          document.getElementById(id).classList.add("active");
+        }
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            const id = this.getAttribute("data-target");
+            showCard(id);
+          });
+        });
+
+        // Initial state
+        showCard("Grow");
       });
     </script>
   </body>
