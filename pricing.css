@@ -29,7 +29,7 @@ body {
 .pricing-hero {
   text-align: center;
   padding: 40px 20px 80px;
-  background: linear-gradient(to bottom right, #fff, #fff0f0);
+  background: linear-gradient(to top right, #fff 80%, #fff0f0 100%);
 }
 
 /* Breadcrumb */
