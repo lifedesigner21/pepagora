@@ -87,6 +87,25 @@ body {
   color: #232323;
 }
 
+.btn-small {
+  width: 280px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 9999px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #232323;
+}
+
+.btn-small:hover {
+  background-color: #f1f1f1;
+}
+
 .btn:hover {
   background-color: #f1f1f1;
 }
@@ -107,6 +126,8 @@ body {
   .contact-subheading {
     font-size: 14px;
     margin-bottom: 8px;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: 450;
   }
 
   .contact-heading {
@@ -131,6 +152,15 @@ body {
 
   .btn {
     max-width: 300px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-small {
+    max-width: 200px;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -296,6 +326,7 @@ body {
     font-style: normal;
     font-weight: 450;
     line-height: 24px;
+    letter-spacing: 0.1px;
   }
   .contact-form button {
     display: flex;
@@ -371,12 +402,11 @@ body {
   font-weight: 450;
   line-height: 50px;
 }
-.partnership-description svg{
+.partnership-description svg {
   stroke-width: 1px;
-stroke: #363636;
-opacity: 0.5;
+  stroke: #363636;
+  opacity: 0.5;
 }
-
 
 .partnership-contact {
   margin-top: 8px;
@@ -406,7 +436,6 @@ opacity: 0.5;
   gap: 20px;
   margin: 40px 240px;
 }
-
 
 .card {
   flex: 1;
@@ -768,6 +797,7 @@ opacity: 0.5;
     font-weight: 450;
     line-height: 24px;
     margin-bottom: 20px;
+    letter-spacing: 0.1px;
   }
 
   /* CTA */
@@ -934,14 +964,13 @@ opacity: 0.5;
     width: 21px;
     height: 21px;
   }
-  .button-right{
+  .button-right {
     width: 26px;
-    height:26px;
+    height: 26px;
     padding: 4px;
   }
   .button-right svg {
     width: 14.4px;
     height: 14.4px;
-  } 
-  
+  }
 }
