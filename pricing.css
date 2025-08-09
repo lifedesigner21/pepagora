@@ -1028,10 +1028,14 @@ hr {
   width: 100%;
   border-collapse: collapse;
   min-width: 800px;
+  
+}
+.comparison-table td:first-child{
+  background: #F9F9F9;
 }
 
 .comparison-table thead {
-  background: #f9f9f9;
+  background: #ffffff;
   font-weight: bold;
 }
 
