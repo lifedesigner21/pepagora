@@ -126,8 +126,9 @@ body {
   .contact-subheading {
     font-size: 14px;
     margin-bottom: 8px;
-    font-family: "Neue Haas Grotesk Display Pro";
+    font-style: normal;
     font-weight: 450;
+    line-height: 20px;
   }
 
   .contact-heading {
@@ -151,7 +152,16 @@ body {
   }
 
   .btn {
-    max-width: 300px;
+    width: 300px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-small {
+    max-width: 200px;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -294,7 +304,7 @@ body {
 
 @media (max-width: 768px) {
   .contact-details-section {
-    padding: 40px 20px;
+    padding: 56px 20px;
   }
 
   .contact-details-container {
@@ -337,6 +347,11 @@ body {
     align-items: center;
     gap: 8px;
     align-self: stretch;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px; /* 100% */
+    letter-spacing: 0.5px;
   }
 
   .info-item p {
@@ -356,6 +371,60 @@ body {
   .info-item svg {
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
+  }
+
+  .contact-info h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 16px; /* optional */
+  }
+
+  .contact-info .info-item {
+    flex-direction: row; /* keep icon and text inline */
+    align-items: center;
+  }
+
+  .contact-info .info-item:nth-child(3) {
+    flex: 1 1 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+
+  .contact-info .info-item:nth-child(5) {
+    flex: 1 1 100%; /* India Office full width */
+  }
+
+  .contact-offices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* space between them */
+    padding: 24px 0;
+  }
+
+  .contact-offices .info-item {
+    flex: 1 1 calc(50% - 16px); /* two per row */
+    box-sizing: border-box;
+  }
+
+  .contact-top-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+    padding: 24px 0;
+  }
+
+  .contact-top-row .info-item {
+    flex: 1 1 calc(50% - 16px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+  }
+
+  .contact-top-row svg {
+    flex-shrink: 0;
   }
 }
 
@@ -623,7 +692,7 @@ body {
 /* huge faint background word */
 .pep-bg-text {
   position: absolute;
-  top: -11%;
+  top: -16%;
   right: -2px;
   text-align: right;
   font-size: 240px;
@@ -707,6 +776,7 @@ body {
   font-weight: 600;
   line-height: 24px;
   margin-top: 80px;
+  text-decoration: none;
 }
 
 /* right-side email block with vertical divider after it */
@@ -725,9 +795,9 @@ body {
 }
 
 .pep-email-divider {
-  width: 1px;
-  height: 110px; /* tall vertical line to the right of the email */
-  background: #d6d6d6;
+  width: 2px;
+  height: 74px;
+  background: #cfcfcf;
 }
 
 /* decorative bottom-left double arcs (thin, faint) */
@@ -763,8 +833,8 @@ body {
   /* Background text - smaller but still behind */
   .pep-bg-text {
     font-size: 72px;
-    top: -8%;
-    right: 0;
+    top: -12%;
+    right: 5px;
     letter-spacing: -4px;
   }
 
@@ -822,15 +892,27 @@ body {
     gap: 10px;
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* or 'end' */
+  align-items: flex-end; 
   }
 
+  .partnership-contact p {
+  margin: 0; /* ⬅ removes browser default p margin */
+}
   .pep-email-divider {
-    display: none; /* hide vertical divider */
+    width: 2px;
+    height: 50px;
+    background: #cfcfcf;
   }
 
   /* Decorative arcs - shrink or hide on mobile */
   .pep-arcs {
-    display: none; /* optional: remove for cleaner mobile */
+    width: 200px;
+    height: 200px;
+    left: -60px; /* adjust to fit smaller screen */
+    bottom: -100px; /* adjust to fit smaller screen */
   }
 }
 
