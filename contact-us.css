@@ -91,6 +91,54 @@ body {
   background-color: #f1f1f1;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: auto;
+  }
+
+  .contact-us-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 56px 16px;
+  }
+  .contact-subheading {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.48px;
+  }
+  .contact-heading .highlight {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: -0.48px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    max-width: 300px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
 /* SESCOND SECTION */
 .contact-details-section {
   width: 100%;
@@ -213,6 +261,73 @@ body {
 }
 
 /* second section end */
+
+@media (max-width: 768px) {
+  .contact-details-section {
+    padding: 40px 20px;
+  }
+
+  .contact-details-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px;
+    color: #232323;
+  }
+  .contact-form label {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px;
+  }
+  .contact-form button {
+    display: flex;
+    height: 40px;
+    min-height: 40px;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+  
+
+  .info-item p {
+    font-size: 12px;
+font-style: normal;
+font-weight: 450;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.24px;
+  }
+
+  .info-item span {
+   font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: 20px;
+  }
+  .info-item svg{
+    width: 20px;
+    height: 20px;
+  }
+}
 
 /* Partnership Section */
 .partnership-section {
@@ -376,12 +491,11 @@ body {
 /* Outer background */
 .pep-careers-section {
   width: 100%;
-  background: #F4F4F4;
+  background: #f4f4f4;
   padding: 0px 20px;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-
 }
 
 /* The white rounded card */
@@ -403,13 +517,13 @@ body {
   position: absolute;
   top: -11%;
   right: -2px;
- text-align: right;
-font-size: 240px;
-font-style: normal;
-font-weight: 450;
-line-height: normal;
-letter-spacing: -9.6px;
-color: #F8F8F8;
+  text-align: right;
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: -9.6px;
+  color: #f8f8f8;
 }
 
 /* left intro block (vertical line + 2-line text) */
@@ -484,7 +598,7 @@ color: #F8F8F8;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  margin-top: 80px
+  margin-top: 80px;
 }
 
 /* right-side email block with vertical divider after it */
@@ -497,8 +611,6 @@ color: #F8F8F8;
   gap: 26px;
   z-index: 5;
 }
-
-
 
 .pep-email-text a:hover {
   text-decoration: underline;
@@ -534,82 +646,87 @@ color: #F8F8F8;
 
 /* new section */
 
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 144px 240px;
+  background-color: #f8f8f8;
+  width: 100%;
+}
 
-    .section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 144px 240px;
-        background-color: #F8F8F8;
-        width: 100%;
-    }
+.text-content {
+  max-width: 50%;
+}
 
-    .text-content {
-        max-width: 50%;
-    }
+.text-content h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 90px; /* 150% */
+  letter-spacing: -1.2px;
+  color: #363636;
+}
 
-    .text-content h1 {
-        font-size: 2.5rem;
-        font-weight: 500;
-        line-height: 1.3;
-        margin: 0 0 20px;
-        color: #222;
-    }
+.text-content h1 span {
+  color: #e50914; /* Red highlight */
+}
 
-    .text-content h1 span {
-        color: #e50914; /* Red highlight */
-    }
+.text-content p {
+  color: #444;
 
-    .text-content p {
-        font-size: 1rem;
-        color: #555;
-        line-height: 1.6;
-        max-width: 500px;
-    }
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.2px;
+}
 
-    .button-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 40%;
-    }
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
 
-    .button-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 12px;
-        padding: 18px 20px;
-        box-shadow: 0 0 0 1px #eee;
-        transition: box-shadow 0.3s ease;
-    }
+.button-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 0 0 1px #eee;
+  transition: box-shadow 0.3s ease;
+}
 
-    .button-item:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
+.button-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
-    .button-left {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        font-size: 1rem;
-        font-weight: 400;
-    }
+.button-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 400;
+}
 
-    .button-left img {
-        width: 22px;
-        height: 22px;
-    }
+.button-left img {
+  width: 22px;
+  height: 22px;
+}
 
-    .button-right {
-        background-color: #e50914;
-        color: white;
-        border-radius: 50%;
-        width: 28px;
-        height: 28px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-    }
+.button-right {
+  background-color: #e50914;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
