@@ -300,10 +300,10 @@ body {
   line-height: 24px;
 }
 
-.contact-top-row{
+.contact-top-row {
   border-bottom: 1px solid rgba(102, 102, 102, 0.2);
 }
-.contact-offices{
+.contact-offices {
   margin-top: 32px;
 }
 
@@ -842,8 +842,20 @@ body {
 /* decorative bottom-left double arcs (thin, faint) */
 .pep-arcs {
   position: absolute;
-  left: -123px;
-  bottom: -183px; /* partially outside card to match the screenshot */
+  left: -150px;
+  bottom: -220px;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.pep-arcs-2 {
+  position: absolute;
+  left: -165px;
+  bottom: -209px;
   width: 430px;
   height: 430px;
   border-radius: 50%;
@@ -952,6 +964,13 @@ body {
     height: 200px;
     left: -60px; /* adjust to fit smaller screen */
     bottom: -100px; /* adjust to fit smaller screen */
+  }
+
+  .pep-arcs-2 {
+    width: 200px;
+    height: 200px;
+    left: -53px;
+    bottom: -104px;
   }
 }
 
