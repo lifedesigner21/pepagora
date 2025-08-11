@@ -505,7 +505,6 @@ body {
 }
 
 .partnership-contact {
-  margin-top: 8px;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -529,7 +528,7 @@ body {
 .partnership-cards {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 56px;
   margin: 40px 240px;
 }
 
@@ -827,6 +826,7 @@ body {
   align-items: center;
   gap: 26px;
   z-index: 5;
+  align-items: flex-end;
 }
 
 .pep-email-text a:hover {
@@ -980,7 +980,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 144px 240px;
+  padding: 144px 259px;
   background-color: #f8f8f8;
   width: 100%;
 }
@@ -1004,8 +1004,7 @@ body {
 
 .text-content p {
   color: #444;
-
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
