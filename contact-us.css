@@ -211,7 +211,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .info-item img {
@@ -262,7 +262,7 @@ body {
 }
 
 .contact-form label {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   color: #171a1c;
   font-family: Inter;
   font-size: 14px;
@@ -298,6 +298,13 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+
+.contact-top-row{
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+}
+.contact-offices{
+  margin-top: 32px;
 }
 
 /* second section end */
