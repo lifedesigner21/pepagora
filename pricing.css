@@ -152,7 +152,7 @@ body {
   align-items: center;
   gap: 10px;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 /* Responsive */
@@ -991,7 +991,7 @@ hr {
 
 .toggle-btn-wrapper {
   display: block;
-  margin: 20px 0;
+  margin: 60px 0;
 }
 
 .toggle-btn {
@@ -1061,10 +1061,21 @@ hr {
 }
 
 /* Table Cell Sizing Consistency */
+.comparison-table th {
+  padding: 32px 32px;
+  text-align: left;
+  border: 1px solid #eee;
+  font-size: 0.95rem;
+  height: 80px; /* Adjust height for box consistency */
+  min-width: 150px; /* Standard box width */
+  vertical-align: middle; /* Align content in center */
+  box-sizing: border-box;
+  font-weight: 500;
+}
 .comparison-table th,
 .comparison-table td {
-  padding: 12px 16px;
-  text-align: center;
+  padding: 24px 24px;
+  text-align: left;
   border: 1px solid #eee;
   font-size: 0.95rem;
   height: 80px; /* Adjust height for box consistency */
@@ -1079,7 +1090,7 @@ hr {
 .comparison-table th:first-child {
   text-align: left;
   min-width: 240px; /* Slightly wider for text */
-  height: 100px;
+  height: 72px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -1089,7 +1100,7 @@ hr {
   display: block;
   font-size: 0.8rem;
   color: #555;
-  margin-top: 4px;
+  margin-top: 15px;
   line-height: 1.4;
 }
 
@@ -1297,7 +1308,7 @@ hr {
     word-wrap: break-word;
     box-sizing: border-box;
     cursor: pointer;
-    display: flex ;
+    display: flex;
     justify-content: space-around;
   }
 
@@ -1542,6 +1553,8 @@ hr {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-weight: 500;
+    font-size: 24px;
   }
   .feature-table {
     width: 100%;
