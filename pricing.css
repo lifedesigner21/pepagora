@@ -1280,21 +1280,19 @@ hr {
     text-align: center;
     margin-bottom: 15px;
   }
-  .toggle-btn-wrapper{
-    display: flex;
-    justify-content: center;
-  }
 
   /* Button styling */
   #closeComparisonBtn {
-    width: 80%; /* Full width on mobile */
+    width: 100%; /* Full width on mobile */
     max-width: none;
     padding: 12px 10px;
-    font-size: 12px;
+    font-size: 14px;
     white-space: normal; /* Allow line wrap */
     word-wrap: break-word;
     box-sizing: border-box;
     cursor: pointer;
+    display: flex ;
+    justify-content: space-around;
   }
 
   /* Ensure button container does not cause overflow */
