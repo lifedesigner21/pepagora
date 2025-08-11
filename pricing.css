@@ -206,19 +206,19 @@ body {
     font-size: 0.95rem;
   }
   .section-header-flex {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
-color: #232323;
-}
-.section-header-flex svg{
-  width: 20px;
-  height: 20px;
-}
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #232323;
+  }
+  .section-header-flex svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Growth Plans Section */
@@ -557,7 +557,6 @@ hr {
     padding: 6px 10px;
   }
 
-
   /* Keep cards working with previous style */
   .plans-container .plan-card {
     display: none;
@@ -767,7 +766,7 @@ hr {
   .foundation-header h2 {
     color: #232323;
     text-align: center;
-
+    letter-spacing: normal;
     font-size: 24px;
     font-style: normal;
     font-weight: 450;
@@ -789,7 +788,7 @@ hr {
   .foundation-header .description {
     color: var(--Secondary-Color-Granite-Grey, #616161);
     text-align: center;
-
+    padding: 0 10px;
     font-size: 14px;
     font-style: normal;
     font-weight: 450;
@@ -850,8 +849,9 @@ hr {
   position: relative;
   cursor: pointer;
   padding-right: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 56px;
   border-bottom: 1px solid #e6e6e6;
+  font-size: 28px;
 }
 
 .faq-category-title::after {
@@ -898,7 +898,7 @@ hr {
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   padding: 16px 20px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   font-size: 0.95rem;
   font-weight: 400;
   color: #111;
@@ -962,6 +962,7 @@ hr {
   .faq-heading {
     font-size: 24px;
     line-height: 1.3;
+    letter-spacing: normal;
   }
 
   .faq-category-title h3,
@@ -985,9 +986,11 @@ hr {
   padding: 60px 20px;
   background-color: #fafafa;
   text-align: center;
+  margin-bottom: 90px;
 }
 
 .toggle-btn-wrapper {
+  display: block;
   margin: 20px 0;
 }
 
@@ -1077,7 +1080,6 @@ hr {
   text-align: left;
   min-width: 240px; /* Slightly wider for text */
   height: 100px;
-  vertical-align: top;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -1280,6 +1282,10 @@ hr {
     text-align: center;
     margin-bottom: 15px;
   }
+  .toggle-btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 
   /* Button styling */
   #closeComparisonBtn {
@@ -1305,5 +1311,381 @@ hr {
     word-wrap: break-word;
     white-space: normal;
     padding: 8px;
+  }
+}
+
+.mobile-feature-comparison-wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn-wrapper {
+    display: none;
+  }
+
+  .feature-comparison-wrapper {
+    display: none;
+  }
+  .mobile-feature-comparison-wrapper {
+    display: block;
+    padding: 20px 0;
+    background-color: #fafafa;
+    text-align: center;
+  }
+
+  .mobile-toggle-btn-wrapper {
+    margin: 20px 0;
+  }
+
+  .mobile-toggle-btn {
+    padding: 12px 24px;
+    border: 1.5px solid #000;
+    border-radius: 30px;
+    background: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    width: 90%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .mobile-toggle-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  .mobile-toggle-btn .plus-icon {
+    font-size: 1.2rem;
+  }
+
+  .mobile-toggle-btn.hidden {
+    display: none;
+  }
+
+  .mobile-feature-comparison-container {
+    display: none;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  }
+
+  .mobile-feature-comparison-container.show {
+    display: block;
+  }
+
+  .mobile-feature-title {
+    display: none;
+  }
+
+  .mobile-feature-title .highlight {
+    color: #d92c27;
+  }
+
+  /* Section Headers */
+  .mobile-section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    margin: 20px 0 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobile-section-header svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mobile-section-header span {
+    font-weight: 600;
+    color: #d92c27;
+    font-size: 16px;
+  }
+
+  /* Feature Cards */
+  .mobile-feature-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .mobile-feature-header {
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobile-feature-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .mobile-feature-description {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .mobile-feature-value {
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .mobile-feature-value.highlight {
+    background: #fff3f3;
+    color: #d92c27;
+    font-weight: 600;
+  }
+
+  .mobile-feature-value.cross {
+    color: #999;
+  }
+
+  .mobile-feature-value.check {
+    color: #22c55e;
+  }
+
+  /* Close button */
+  .mobile-close-btn {
+    margin-top: 30px;
+    padding: 12px 20px;
+    border: 1.5px solid #000;
+    border-radius: 30px;
+    background: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    width: 90%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  /* .mobile-close-btn:hover {
+    background: #000;
+    color: #fff;
+  } */
+
+  /* Base table styles */
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .pricing-heading {
+    background-color: #f9f9f9;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .pricing-heading svg {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .mobile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .mobile-table th,
+  .mobile-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .mobile-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+
+  .mobile-table small {
+    font-size: 0.85em;
+    color: #555;
+  }
+
+  .section-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .feature-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .feature-table th,
+  .feature-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .feature-table th {
+    background-color: #f9f9f9;
+    text-align: left;
+    font-size: 1.1em;
+  }
+
+  .section-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-header-flex svg {
+    flex-shrink: 0;
+  }
+
+  .feature-table small {
+    color: #555;
+    font-size: 0.85em;
+  }
+
+  .feature-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .feature-table th {
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+
+  .feature-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+  }
+
+  .feature-table small {
+    display: block;
+    color: #555;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+
+  .section-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .feature-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .feature-table th,
+  .feature-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    vertical-align: top;
+  }
+
+  .feature-table th {
+    background-color: #f5f5f5;
+    text-align: left;
+  }
+
+  .section-header {
+    background-color: #fff3f3;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .section-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-header svg {
+    flex-shrink: 0;
+  }
+
+  .feature-table small {
+    display: block;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  .pricing-table-mobile table {
+    border-collapse: separate; /* Required for border radius */
+    border-spacing: 0; /* Remove gaps */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip inner corners */
+  }
+
+  .pricing-table-mobile th,
+  .pricing-table-mobile td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .pricing-table-mobile th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .pricing-table-mobile small {
+    color: #666;
+    font-size: 12px;
+  }
+
+  .section-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }
