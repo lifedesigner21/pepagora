@@ -208,6 +208,20 @@ body {
     padding: 10px 20px;
     font-size: 0.95rem;
   }
+  .section-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+color: #232323;
+}
+.section-header-flex svg{
+  width: 20px;
+  height: 20px;
+}
 }
 
 /* Growth Plans Section */
@@ -546,8 +560,6 @@ hr {
     padding: 6px 10px;
   }
 
-  .billing-option.active {
-  }
 
   /* Keep cards working with previous style */
   .plans-container .plan-card {
@@ -1185,7 +1197,7 @@ hr {
 
   /* Feature name */
   .comparison-table td:first-child {
-    font-weight: bold;
+    font-weight: normal;
     background: none !important;
     border-right: 1px solid #eee; /* optional divider */
   }
@@ -1277,13 +1289,17 @@ hr {
     text-align: center;
     margin-bottom: 15px;
   }
+  .toggle-btn-wrapper{
+    display: flex;
+    justify-content: center;
+  }
 
   /* Button styling */
   #closeComparisonBtn {
-    width: 100%; /* Full width on mobile */
+    width: 80%; /* Full width on mobile */
     max-width: none;
     padding: 12px 10px;
-    font-size: 1rem;
+    font-size: 12px;
     white-space: normal; /* Allow line wrap */
     word-wrap: break-word;
     box-sizing: border-box;
