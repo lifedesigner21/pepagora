@@ -47,6 +47,10 @@ body {
   color: #bbb;
 }
 
+.hero-content{
+    margin-top: 173px;
+}
+
 /* Hero Text */
 .hero-content h1 {
   color: #232323;
@@ -58,6 +62,7 @@ body {
   letter-spacing: -1.44px;
   margin-bottom: 15px;
 }
+
 
 .hero-content .highlight {
   color: #d62828;
@@ -76,6 +81,7 @@ body {
   font-weight: 500;
   line-height: 50px; /* 156.25% */
 }
+
 
 .hero-content p {
   width: 834px;
