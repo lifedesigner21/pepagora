@@ -103,12 +103,11 @@ body {
 }
 
 .btn-small:hover {
-  background-color: #f1f1f1;
+  background-color: #d92c27;
+  color:#fff
 }
 
-.btn:hover {
-  background-color: #f1f1f1;
-}
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
